@@ -6,7 +6,7 @@
   --color-gray-dark: #191919;
   --color-white: #fff;
   --color-black: #000;
-  --shadow-light: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2); }
+  --shadow-light: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.2); }
 
 *,
 *::before,
@@ -26,11 +26,16 @@ body {
   line-height: 3rem;
   color: var(--color-black); }
 
-.heading-primary--main {
+.heading-primary--main, .footer__link {
   font-weight: 700;
   font-size: 4.5rem;
   color: var(--color-gray-dark);
   text-shadow: var(--shadow-light); }
+
+.heading-tertiary {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: italic; }
 
 .u-margin-top-small {
   margin-top: 2rem !important; }
@@ -43,6 +48,9 @@ body {
 
 .u-margin-top-largest {
   margin-top: 8rem !important; }
+
+.u-center-text {
+  text-align: center; }
 
 .main {
   display: grid;
@@ -74,8 +82,14 @@ body {
 .section-tribute {
   grid-column: col-start 1 / col-end 8; }
 
+.section-after-death {
+  grid-column: col-start 1 / col-end 8; }
+
 .footer {
-  grid-column: page-start / page-end; }
+  grid-column: page-start / page-end;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .main {
   max-width: 100rem;
@@ -111,3 +125,43 @@ body {
   margin: 1rem 5rem;
   border-radius: 2rem;
   background-color: var(--color-gray-light); }
+  .footer__link {
+    font-size: 2.6rem;
+    font-style: italic;
+    color: var(--color-gray-dark); }
+
+.story-box {
+  display: grid;
+  grid-template-rows: 4rem 30rem;
+  grid-template-columns: 4rem 1fr;
+  grid-column-gap: 2rem;
+  justify-items: start; }
+  .story-box__circle {
+    width: 100%;
+    border: 0.3rem solid var(--color-black);
+    border-radius: 50%;
+    transform: scale(0.5);
+    background-color: var(--color-gray-light); }
+  .story-box__title {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+    background-color: var(--color-black);
+    color: var(--color-white); }
+  .story-box__line::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    border-right: 0.3rem solid var(--color-black);
+    transform: translateX(1.9rem); }
+  .story-box__story {
+    align-self: center; }
+
+.feature-box {
+  border-radius: 7rem;
+  background-image: linear-gradient(to bottom, var(--color-brown-light), var(--color-brown-dark)); }
+  .feature-box__text {
+    padding: 5rem 7rem;
+    font-style: italic;
+    font-size: 2.6rem; }

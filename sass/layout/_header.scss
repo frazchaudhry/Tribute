@@ -1,6 +1,5 @@
 .header {
   grid-column: page-start / page-end;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
 }

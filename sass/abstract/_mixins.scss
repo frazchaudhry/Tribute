@@ -4,3 +4,8 @@
   border-radius: 2rem;
   background-color: var(--color-gray-light);
 }
+
+@mixin flexCenter {
+  justify-content: center;
+  align-items: center;
+}

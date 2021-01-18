@@ -18,3 +18,9 @@ body {
     @extend %heading;
   }
 }
+
+.heading-tertiary {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: italic;
+}

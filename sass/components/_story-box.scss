@@ -1,0 +1,38 @@
+.story-box {
+  display: grid;
+  grid-template-rows: 4rem 30rem;
+  grid-template-columns: 4rem 1fr;
+  grid-column-gap: 2rem;
+  justify-items: start;
+
+  &__circle {
+    width: 100%;
+    border: 0.3rem solid var(--color-black);
+    border-radius: 50%;
+    transform: scale(0.5);
+    background-color: var(--color-gray-light);
+  }
+
+  &__title {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  &__line {
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      border-right: 0.3rem solid var(--color-black);
+      transform: translateX(1.9rem);
+    }
+  }
+
+  &__story {
+    align-self: center;
+  }
+}
