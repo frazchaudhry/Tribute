@@ -1,0 +1,27 @@
+.feature {
+  grid-column: col-start 1 / col-end 8;
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    align-self: center;
+
+    &-caption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &--main {
+        flex: 0 1 100%;
+      }
+
+      &--sub {
+        flex: 0 1 100%;
+      }
+
+      &--detail {
+        flex: 0 1 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.main {
+  display: grid;
+  grid-template-columns:
+    [page-start]
+    minmax(1rem, 1fr) repeat(8, [col-start] minmax(min-content, 10rem) [col-end])
+    minmax(1rem, 1fr) [page-end];
+}

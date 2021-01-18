@@ -1,2 +1,14 @@
-@import 'base/base';
 @import 'abstract/variables';
+@import 'abstract/mixins';
+
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/feature';
+@import 'layout/tribute';
+@import 'layout/footer';
+
+@import 'pages/home';

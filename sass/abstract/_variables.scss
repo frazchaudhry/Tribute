@@ -1,8 +1,14 @@
 :root {
-  --color-primary: #d2c8c0;
-  --color-secondary: #de9c3d;
-  --color-tertiary: #c4c4c4;
+  --color-primary: #faf0e6;
+  --color-brown-light: #de9c3d;
+  --color-brown-dark: #8e7968;
+  --color-gray-light: #c4c4c4;
+  --color-gray-dark: #191919;
 
   --color-white: #fff;
   --color-black: #000;
+
+  --shadow-light: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
 }
+
+$default-font-size: 2rem;
