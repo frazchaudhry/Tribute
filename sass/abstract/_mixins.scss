@@ -1,5 +1,5 @@
 @mixin headFoot {
-  height: 8rem;
+  min-height: 8rem;
   margin: 1rem 5rem;
   border-radius: 2rem;
   background-color: var(--color-gray-light);
@@ -8,4 +8,9 @@
 @mixin flexCenter {
   justify-content: center;
   align-items: center;
+}
+
+@mixin quoteStyle {
+  font-size: $quote-font-size;
+  color: var(--color-quote);
 }
