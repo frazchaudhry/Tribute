@@ -19,6 +19,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -33,6 +36,10 @@ body {
   color: var(--color-gray-dark);
   text-shadow: var(--shadow-light); }
 
+@media only screen and (max-width: 37.5em) {
+  .heading-primary--main {
+    text-align: center; } }
+
 .heading-tertiary {
   font-size: 2.8rem;
   font-weight: 700;
@@ -40,15 +47,24 @@ body {
 
 .u-margin-top-small {
   margin-top: 2rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-top-small {
+      margin-top: 1rem !important; } }
 
 .u-margin-top-medium {
   margin-top: 3rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-top-medium {
+      margin-top: 1.5rem !important; } }
 
 .u-margin-top-large {
   margin-top: 4rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-top-large {
+      margin-top: 2rem !important; } }
 
 .u-margin-top-largest {
-  margin-top: 8rem !important; }
+  margin-top: 4rem !important; }
 
 .u-center-text {
   text-align: center; }
@@ -97,12 +113,18 @@ body {
   background-color: var(--color-primary);
   margin: 5rem auto;
   border: 1.6rem solid var(--color-brown-dark); }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      margin: 0; } }
 
 .header {
   min-height: 8rem;
   margin: 1rem 5rem;
   border-radius: 2rem;
   background-color: var(--color-gray-light); }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      margin: 0; } }
 
 .feature__img {
   max-width: 100%; }
@@ -134,10 +156,16 @@ body {
   margin: 1rem 5rem;
   border-radius: 2rem;
   background-color: var(--color-gray-light); }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      margin: 0; } }
   .footer__link {
     font-size: 2.6rem;
     font-style: italic;
     color: var(--color-gray-dark); }
+    @media only screen and (max-width: 37.5em) {
+      .footer__link {
+        text-align: center; } }
 
 .story-box {
   display: grid;

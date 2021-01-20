@@ -16,6 +16,10 @@ body {
 .heading-primary {
   &--main {
     @extend %heading;
+
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 }
 

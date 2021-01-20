@@ -3,6 +3,10 @@
   background-color: var(--color-primary);
   margin: 5rem auto;
   border: 1.6rem solid var(--color-brown-dark);
+
+  @include respond(phone) {
+    margin: 0;
+  }
 }
 
 .header {
@@ -55,5 +59,9 @@
     font-size: 2.6rem;
     font-style: italic;
     color: var(--color-gray-dark);
+
+    @include respond(phone) {
+      text-align: center;
+    }
   }
 }

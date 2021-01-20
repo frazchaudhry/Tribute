@@ -3,6 +3,10 @@
   margin: 1rem 5rem;
   border-radius: 2rem;
   background-color: var(--color-gray-light);
+
+  @include respond(phone) {
+    margin: 0;
+  }
 }
 
 @mixin flexCenter {
@@ -13,4 +17,13 @@
 @mixin quoteStyle {
   font-size: $quote-font-size;
   color: var(--color-quote);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      // 600px
+      @content;
+    }
+  }
 }
